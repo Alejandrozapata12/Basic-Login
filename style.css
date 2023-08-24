@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url(martin-martz-6AlEU0zwST8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+/*Container styles*/
+.container{
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+    margin-top: 50px;
+    background-color: #19355D;
+    border-radius: 50%;
+    
+}
+/*Log styles*/
+.log{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 6px solid #E36535;
+   margin-left: 187px;
+   transform: translateY(50px);
+   animation: circle 6s infinite;
+}
+/*Log animation*/
+@keyframes circle{
+    0% {
+        border: 6px solid #E36535;
+    }
+    50% {
+        border: 6px solid #f1571a;
+    }
+    100% {
+        border: 6px solid #E36535;
+    }
+}
+/*Principal text styles*/
+.log h1{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+    font-family: monospace ;
+}
+
+form{
+    margin: 0px auto;
+    padding-top: 80px;
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input{
+    margin-bottom: 8px ;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #E36535;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 350ms;
+}
+
+form button:hover{
+    background-color: #f1571a;
+}
+
+form h2{
+    margin-top: 20px;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+   padding-top: 25px;
+}
+
+form a{
+    text-decoration: none;
+    color: #ccc;
+    padding-left: 15px;
+    transition: all 350ms;
+}
+
+form a:hover{
+    background-color: #f1571a;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    
+}
+
+
